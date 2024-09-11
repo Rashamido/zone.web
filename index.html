@@ -23,7 +23,8 @@
         }
         .hero {
             background: url('road.jpg') no-repeat center center/cover;
-            height: 350px;
+            height: 70vh;
+            min-height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -32,7 +33,6 @@
         }
         .hero h1 {
             font-size: 50px;
-            margin: 0;
         }
         .features {
             display: flex;
@@ -54,9 +54,19 @@
             font-size: 22px;
         }
         .feature img {
-            max-width: 90%;
-            height: auto;
+            max-width: 100%;
+            width: 350px;
+            height: 250px;
             border-radius: 8px;
+        }
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .feedback-grid img {
+            width: 100%;
+            height: auto;
         }
         .cta {
             background-color: #1db954;
@@ -147,10 +157,12 @@
                 <p>Tailor your runs to stay in the optimal heart rate zone for maximum efficiency and results.</p>
             </div>
             <div class="feature">
-                <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch1.JPG" alt="Live Feedback">
-                <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch2.JPG" alt="Live Feedback">
-                <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch3.JPG" alt="Live Feedback">
-                <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch4.JPG" alt="Live Feedback">
+                <div class="feedback-grid">
+                    <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch1.JPG" alt="Live Feedback">
+                    <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch2.JPG" alt="Live Feedback">
+                    <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch3.JPG" alt="Live Feedback">
+                    <img src="https://raw.githubusercontent.com/Rashamido/zone.web/main/public/watch4.JPG" alt="Live Feedback">
+                </div>
                 <h3>Live Feedback</h3>
                 <p>Get real-time updates on your Apple Watch to ensure you are always on track with your running goals.</p>
             </div>
@@ -174,4 +186,3 @@
     </div>
 </body>
 </html>
-
